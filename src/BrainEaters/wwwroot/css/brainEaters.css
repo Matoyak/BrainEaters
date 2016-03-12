@@ -1,0 +1,9 @@
+﻿body {
+  background-color: #008080;
+}
+
+#gameSpace {
+  margin: auto;
+  display: block;
+  background-color: #696969;
+}
