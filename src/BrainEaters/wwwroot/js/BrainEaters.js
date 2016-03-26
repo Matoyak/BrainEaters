@@ -70,13 +70,10 @@ window.onload = function () {
         zomRow = Math.floor(Math.random() * (numRow - 6) + 5);
     } while (zomRow % 2 === 0);
     var zombie1 = new Zombie(zomRow);
-    // ReSharper restore UnusedLocals
-    // ReSharper restore VariableCanBeMadeConst
     function populateGame() {
         for (var row = 0; row < numRow; row++) {
             var numEmptyMax = Math.floor(Math.random() * 2 + 4);
             //console.log(numEmptyMax);
-            // ReSharper disable once VariableCanBeMovedToInnerBlock
             var numEmpty = 0; //why move inside?
             for (var col = 0; col < numCol; col++) {
                 //gameArr[row][col] = 0;

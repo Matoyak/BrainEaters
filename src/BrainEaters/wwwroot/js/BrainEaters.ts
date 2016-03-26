@@ -74,14 +74,10 @@
     } while (zomRow % 2 === 0)
     let zombie1 = new Zombie(zomRow);
 
-    // ReSharper restore UnusedLocals
-    // ReSharper restore VariableCanBeMadeConst
-
     function populateGame() {
         for (let row = 0; row < numRow; row++) {
             const numEmptyMax = Math.floor(Math.random() * 2 + 4);
             //console.log(numEmptyMax);
-            // ReSharper disable once VariableCanBeMovedToInnerBlock
             let numEmpty = 0; //why move inside?
             for (let col = 0; col < numCol; col++) {
                 //gameArr[row][col] = 0;
